@@ -1,0 +1,143 @@
+{% extends 'lunchtime/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<section class="hero">
+    <div class="hero-text">
+        <h1>Enjoy English at <br> University of Nagasaki!</h1>
+        <p><em>Connect, have fun, and grow your confidece in English</em></p>
+    </div>
+    <div class="hero-image">
+        <img src="{% static 'images/lunchtime1.jpg' %}" alt="People having a conversation" width="400px">
+    </div>
+</section>
+
+<section class="event" id="about">
+    <h2>What is Lunchtime English?</h2>
+
+    <!-- Event details -->
+    <div class="event-details">
+        <div class="event-location">
+            <img src="{% static 'images/location.jpg' %}" alt="The location of the event">
+        </div>
+        <ul class="event-info">
+            <li><img src="{% static 'icons/date.svg' %}" alt="schedule icon"><strong> Date:</strong> Every Thursday</li>
+            <li><img src="{% static 'icons/time.svg' %}" alt="time icon"><strong> Time:</strong> 12:15pm - 12:45pm</li>
+            <li><img src="{% static 'icons/map.svg' %}" alt="map icon"><strong> Loc:</strong> 地域交流棟404</li>
+            <li><img src="{% static 'icons/paid.svg' %}" alt="money icon"><strong> Paid:</strong> Free</li>
+        </ul>
+    </div>
+
+    <!-- Intro Section -->
+    <div class="event-intro">
+        <div class="event-text">
+            <h3>Want to improve your English?</h3>
+            <p>Join our weekly conversation event! Speak with native speakers, boost your confidence, and enjoy real conversations!</p>
+        </div>
+        <div class="event-image">
+            <img src="{% static 'images/lunchtime2.png' %}" alt="People having a conversation">
+        </div>
+    </div>
+
+
+    <!-- Teachers -->
+     <h3>Teachers!</h3>
+     
+     <div class="teachers">
+
+        <div class="teacher">
+            <img src="{% static 'images/alex.png' %}" alt="Alex">
+            <h4>
+                <img src="{% static 'icons/canada.png' %}" alt="CANADA icon">
+                Alex
+            </h4>
+            <p>Think different!</p>
+        </div>
+        <div class="teacher">
+            <img src="{% static 'images/nick.png' %}" alt="Alex">
+            <h4>
+                <img src="{% static 'icons/uk.png' %}" alt="GB icon">
+                Nick
+            </h4>
+            <p>I am doctor!</p>
+        </div>
+        <div class="teacher">
+            <img src="{% static 'images/ackerman.png' %}" alt="Alex">
+            <h4>
+                <img src="{% static 'icons/usa.png' %}" alt="USA icon">
+                Ackerman
+            </h4>
+            <p>Tatiff!</p>
+        </div>
+
+     </div>
+     
+</section>
+
+<!-- Testimonials -->
+ <section class="testimonials">
+    <h2>What Student Say?</h2>
+    <div class="testimonial">
+        <img src="{% static 'images/student1.png' %}" alt="Keiji" class="avatar">
+        <p class="bubble">I gained confidence in speaking English through
+            what conversations with these guys! I'm excited to join again next year!</p>
+    </div>
+    <div class="testimonial right">
+        <img src="{% static 'images/student1.png' %}" alt="Keiji" class="avatar">
+        <p class="bubble">I gained confidence in speaking English through
+            what conversations with these guys! I'm excited to join again next year!</p>
+    </div>
+    <div class="testimonial">
+        <img src="{% static 'images/student1.png' %}" alt="Keiji" class="avatar">
+        <p class="bubble">I gained confidence in speaking English through
+            what conversations with these guys! I'm excited to join again next year!</p>
+    </div>
+ </section>
+ 
+
+
+<!-- Tips from Japanese Student -->
+ <section class="tips" id="tips">
+    <h2>Tips form Jpanese Student</h2>
+
+    <div class="content">
+        <div class="tips-text text1">
+            <h3>Shy to Speak? Let's Start Together!</h3>
+            <p>Hi! I'm KEIJI, and I join this meeting every week. 
+               If you're unsure about speaking English, don't worry!
+               You can rely on me—I'm here to help anytime!</p>
+        </div>
+        <div class="tips-image image1">
+            <img src="{% static 'images/people1.jpg' %}" alt="The people struggling something">
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="tips-image image2">
+            <img src="{% static 'images/people2.jpg' %}" alt="The people try something new">
+        </div>
+        <div class="tips-text text2">
+            <h3>Try something new!</h3>
+            <p>Not sure what to do at university? 
+                Let's learn English together! It's fun and 
+                can bring new opportunities!</p>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="tips-text text3">
+            <h3>How do I study English?</h3>
+            <p>I highly recommend watching U.S. dramas!
+               They help you learn vocabulary and build confidence in
+               speaking English. Check out my<a href="{% url 'dramas' %}"> drama recommendations
+               </a> to get started!</p>
+        </div>
+        <div class="tips-image image3">
+            <img src="{% static 'images/people3.jpg' %}" alt="The people learning something">
+        </div>
+    </div>
+
+ </section>
+
+{% endblock %}

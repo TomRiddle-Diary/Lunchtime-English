@@ -1,0 +1,103 @@
+.dramas-wrapper {
+    background-color: #FCFAF2;
+}
+.container {
+    padding: 25px;
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+}
+
+.background {
+    width: 100%;
+    display: block;
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: "Poppins" Arial, sans-serif;
+    color: black;
+    text-align: center;
+}
+
+.dramas {
+    display: flex;
+    gap: 150px;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    margin: auto;
+    max-width: 1000px;
+}
+
+.dramas img {
+    max-width: 400px;
+    border-radius: 25px;
+}
+
+.drama-text {
+    text-align: left;
+}
+
+.drama-text h2 {
+    margin-bottom: 20px;
+}
+
+.drama-text p {
+    margin-bottom: 10px;
+}
+
+.drama-text p:last-of-type {
+    padding: 10px;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 30px;
+    right: 10px;
+}
+
+strong {
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 1.5rem;
+    }
+    .container {
+        padding: 0px;
+    }
+    .dramas {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    .dramas img {
+        max-width: 250px;
+    }
+    .friends-image {
+        order: 1;
+    }
+    .friends-text {
+        order: 2;
+    }
+    .bigbang-image {
+        order: 3;
+    }
+    .bigbang-text {
+        order: 4;
+    }
+    .office-image {
+        order: 5;
+    }
+    .office-text {
+        order: 6;
+    }
+}

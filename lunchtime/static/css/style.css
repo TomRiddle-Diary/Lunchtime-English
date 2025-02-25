@@ -1,0 +1,369 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", serif;
+    color: #313140;
+    background-color: #FBF9F8;
+}
+
+/* Navigation */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 50px;
+    background-color: #FBF9F8;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #313140;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* space for flex element */
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-weight: 550;
+    color: #313140;
+}
+
+/* Hide hamburger by default */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #FBF9F8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-family: "Poppins", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.hero-text p {
+    font-size: 22px;
+    font-family: "Lato", "Inter", sans-serif;
+    font-style: italic;
+}
+
+
+.hero-text p::before {
+    content: '" ';
+}
+
+.hero-text p:after {
+    content: ' "';
+}
+
+/* Image Styling */
+.hero-image img {
+    width: 100%;
+    max-width: 600px;
+}
+
+/* About */
+/* Intro */
+.event {
+    text-align: center;
+    padding: 50px 20px 5px;
+    background-color: #FFFFFF;
+}
+
+.tips h2 {
+    margin-bottom: 40px;
+}
+
+.event h2 {
+    margin-bottom: 60px;
+}
+
+.event-intro, .event-details, .content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+.event-text, .tips-text {
+    max-width: 400px;
+    text-align: center;
+}
+
+.event-text p, .tips-text p {
+    padding: 30px 40px;
+}
+
+.event-image img, .tips-image img {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Event Detail */
+.event-location img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 25px;
+}
+
+.event-info {
+    list-style: none;
+    text-align: left;
+}
+
+.event-info li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+    margin: 20px 0;
+}
+
+.event-info li img {
+    width: 25px;
+    height: 25px;
+}
+
+/* Teachers */
+.teachers {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.teacher {
+    text-align: center;
+}
+
+.teacher > img {
+    border-radius: 25px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 250px;
+}
+
+
+.teacher h4 {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+.teacher h4 img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Student Review */
+.testimonials {
+    text-align: center;
+    padding: 50px;
+}
+
+.testimonial {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.testimonial p {
+    font-size: 16px;
+}
+
+.testimonial.right {
+    flex-direction: row-reverse;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.bubble {
+    background: white;
+    padding: 15px 20px 15px 40px;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    text-align: left;
+}
+
+/* Tips */
+.tips {
+    background-color: #FFFFFF;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.tips a {
+    color: #FF4438;
+}
+
+/* Box shadow */
+.event-location img {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Font weight  */
+h3 {
+    font-weight: bold;
+}
+
+p {
+    font-weight: 400;
+    font-family: "Lato";
+}
+
+/* Footer */
+footer  {
+    display: flex;
+    text-align: center;
+    height: 150px;
+    background-color: #313140;
+    color: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Responsive for navigation */
+@media (max-width: 768px) {
+    
+    nav {
+        padding: 10px 20px;
+    }
+    .nav-links {
+        display: none; /* Hide menu by default */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background: rgba(251, 249, 248, 0.8); /* Light transparent white */
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        width: 150px;
+        text-align: center;
+    }
+
+    .nav-links.show {
+        display: flex; /* Show when clicked */
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+
+/* Responsive for Hero section */
+@media(max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 0px 20px 15px;
+        gap: 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .hero-text p {
+        font-size: 18px;
+    }
+
+    .hero-image img {
+        max-width: 90%;
+    }
+}
+
+/* Responsive for About section */
+@media (max-width: 768px) {
+    .event-intro, .event-details, .teachers {
+        flex-direction: column;
+        align-items: center
+    }
+
+    .event-text, .event-image, .event-location {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .teachers {
+        gap: 20px;
+    }
+
+    .event-details img {
+        max-width: 80%;
+    }
+
+    .event-image img {
+        max-width: 300px;
+    }
+    .teacher > img {
+        max-width: 200px;
+    }
+}
+
+
+/* Responsive for Tips section */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .image1 {
+        order: 1;
+    }
+    .text1 {
+        order: 2;
+    }
+    .image2 {
+        order: 3;
+    }
+    .text2 {
+        order: 4;
+    }
+    .image3 {
+        order: 5;
+    }
+    .text3 {
+        order: 6;
+    }
+
+    .tips-image img {
+        max-width: 260px;
+    }
+}
