@@ -144,6 +144,22 @@ nav {
     margin: 20px 0;
 }
 
+.event-info a{
+    text-decoration: none;
+    color: #313140;
+    position: relative;
+    left: 3px;
+}
+
+.event-info a strong {
+    margin-left: 7px;
+}
+
+.event-info span {
+    text-decoration: underline;
+    color: dodgerblue;
+}
+
 .event-info li img {
     width: 25px;
     height: 25px;
@@ -227,7 +243,7 @@ nav {
 }
 
 .tips a {
-    color: #FF4438;
+    color: dodgerblue;
 }
 
 /* Box shadow */
@@ -254,6 +270,16 @@ footer  {
     color: #FFFFFF;
     justify-content: center;
     align-items: center;
+}
+
+/* Contact */
+.contact {
+    padding: 30px 50px;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
 }
 
 
